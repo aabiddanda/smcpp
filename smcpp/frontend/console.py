@@ -19,7 +19,7 @@ def main():
     logging.init_logging()
     logger = logging.getLogger(__name__)
     logger.debug("SMC++ " + version.version)
-    mp.set_start_method('forkserver')
+    #mp.set_start_method('forkserver')
     parser = ArgumentParser()
     subparsers = parser.add_subparsers(dest='command')
     subparsers.required = True
